@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import './App.css'
 import { Navigate, Route,Routes } from 'react-router-dom'
-import Login from './Pages/login';
-import Signup from './Pages/signup';
+import Login from './Pages/Login';
+import Signup from './Pages/Signup';
 import Home from './Pages/Home';
 
 
@@ -12,7 +12,7 @@ function App() {
     <>
      <div className="App">
       <Routes>
-        <Route  path='/' element={<Navigate to="/Login"/>}/>
+        <Route  path='/' element={<Navigate to="/login"/>}/>
          <Route path='/login' element={<Login />}   />
          <Route path='/Signup' element={<Signup />}   />
          <Route path='/Home' element={<Home />}   />
